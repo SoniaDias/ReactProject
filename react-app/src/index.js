@@ -1,32 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './App04';
 
+//array
+//const checklist = ["this", "is", "cool"];
+//console.log(checklist[1]);
+//objects are mero easy because use key, value pair
+//array destructuring
+//const[, second]= ["this", "is", "cool"];
+//console.log(second);
 
-
-//ReactDOM.render is used to produce content on the view
-//ReactDOM.render(what we want to create, were we want to put it);
+/* authorized part
 ReactDOM.render(
-  //createElement(element, properties, values)
- //1 //React.createElement("h1", {style:{color: "blue"}}, "Hey everyone!"),
- 
- /*2
- React.createElement("ul", null, 
-  React.createElement("li", null, "Monday"), 
-  React.createElement("li", null, "Monday"),
-  React.createElement("li", null, "Monday")),
-  */
+  <App authorized={true}/>,
+  document.getElementById('root')
+);
+*/
 
-  //testing the Babel compiler, writing jsx
- /*
-  <ul>
-    <li>Monday</li>
-    <li>Tuesday</li>
-  </ul>,
-  */
-  <App/>
-  ,
+ReactDOM.render(
+  <App login = "SoniaDias"/>,
   document.getElementById('root')
 );
 
